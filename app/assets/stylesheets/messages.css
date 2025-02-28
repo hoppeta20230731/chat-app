@@ -1,0 +1,171 @@
+.wrapper{
+  display: flex;
+}
+
+.side-bar{
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+  
+}
+
+.chat{
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  
+}
+
+/* ##############################################
+①サイドバー上部
+############################################## */
+
+.side-bar-upper{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-bar-upper__user-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.side-bar-upper__chat-create a{
+  font-size: 10px;
+  color: deepskyblue;
+  padding: 14px;
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+
+/* ##############################################
+②サイドバー中部
+############################################## */
+
+.side-bar-middle{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0 20px; 
+  overflow: scroll;
+}
+
+.side-bar-middle__room{
+  padding: 20px 0 40px;
+}
+
+.side-bar-middle__roomname a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ##############################################
+③チャット上部
+############################################## */
+
+.chat-upper{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-upper__group{
+  color: #333333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.chat-upper__chatend{
+  margin: auto 0;
+  border: 1px solid darkred;
+  padding: 20px;
+}
+
+.chat-upper__chatend a{
+  color: darkred;
+  text-decoration: none;
+}
+
+/* ##############################################
+④チャット中部
+############################################## */
+
+.chat-middle{
+  height: calc(100vh - 190px);
+  background-color: #FAFAFA;
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.chat-middle__users{
+  display: flex;
+  margin: 10px 0;
+}
+
+.chat-middle__username{
+  font-size: 16px;
+  color: #434A54;
+  margin-right: 10px;
+}
+
+.chat-middle__date{
+  font-size: 12px;
+  color: #999;
+}
+
+.chat-middle__chats{
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
+}
+
+/* ##############################################
+⑤フォーム
+############################################## */
+
+.chat-forms{
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.chat-form{
+  width: 100%;
+  display: flex;
+}
+
+.chat-form__message{
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  background-color: white;
+}
+
+.chat-form__btn{
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 15px;
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
