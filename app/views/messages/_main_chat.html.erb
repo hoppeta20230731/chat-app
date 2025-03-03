@@ -8,20 +8,6 @@
 </div>
 <div class="chat-middle">
   <%= render partial: 'message', collection: @messages %>
-  <%# <div class="chat-middle__chatbox">
-    <div class="chat-middle__users">
-      <div class="chat-middle__username">Tom</div>
-      <div class="chat-middle__date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="chat-middle__chats">おはよう</div>
-  </div>
-  <div class="chat-middle__chatbox">
-    <div class="chat-middle__users">
-      <div class="chat-middle__username">Tom</div>
-      <div class="chat-middle__date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="chat-middle__chats">おはよう</div>
-  </div> %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
